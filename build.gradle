@@ -1,0 +1,21 @@
+group = 'org.yaster'
+
+allprojects {
+    version = '1.0.0-SNAPSHOT'
+}
+
+
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+       mavenCentral()
+    }
+
+    // Dépendances
+    dependencies {
+        testCompile 'mockit:jmockit:0.999.4'
+        testCompile 'junit:junit:4.12'
+    }
+}
+
